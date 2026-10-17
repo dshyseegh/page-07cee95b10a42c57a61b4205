@@ -1,0 +1,141 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>老鸭云 - 稳健数据传输协议配置工具</title><meta name="description" content="老鸭云提供基于现代加密协议的数据传输中转服务。本文档详述套餐参数、客户端配置及常见故障排查方法。"><meta name="keywords" content="老鸭云,网络代理,专线传输,科学上网,隐私保护,节点加速"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-53a46b8268.zggzqzjw.cn/"><meta property="og:type" content="website"><meta property="og:title" content="老鸭云 - 稳健数据传输协议配置工具"><meta property="og:description" content="老鸭云提供基于现代加密协议的数据传输中转服务。本文档详述套餐参数、客户端配置及常见故障排查方法。"><meta property="og:url" content="https://p-53a46b8268.zggzqzjw.cn/"><meta property="og:site_name" content="老鸭云"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-53a46b8268.zggzqzjw.cn/", "name": "老鸭云 - 稳健数据传输协议配置工具", "description": "老鸭云提供基于现代加密协议的数据传输中转服务。本文档详述套餐参数、客户端配置及常见故障排查方法。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="07cee95b10a42c57a61b4205:c0222bfc8ed3d09d2b17845b3f1636b872440c3c99d1069baffec7133fe80fb0:1dc3f3ad24f74e5985de"></head><body id="top"><style>
+:root {--bg-color: #FAF3E0;--primary-color: #1B3B36;--secondary-color: #4A5D52;--text-color: #2C2C2C;--border-color: #D6CFB8;--highlight-bg: #FDFBF3}
+*, *::before, *::after {box-sizing: border-box;margin: 0;padding: 0}
+body {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;background-color: var(--bg-color);color: var(--text-color);line-height: 1.7;font-size: 16px}
+header {background-color: var(--primary-color);color: var(--bg-color);position: sticky;top: 0;z-index: 100}
+nav {max-width: 1200px;margin: 0 auto;padding: 12px 24px;display: flex;justify-content: space-between;align-items: center}
+nav .logo {font-weight: 700;letter-spacing: 1px;font-size: 18px}
+nav ul {display: flex;list-style: none;gap: 24px}
+nav a {color: var(--bg-color);text-decoration: none;font-size: 14px;opacity: 0.9}
+nav a:hover {opacity: 1;text-decoration: underline}
+main {max-width: 1200px;margin: 0 auto;padding: 40px 24px}
+.hero {display: grid;grid-template-columns: 1fr 3fr;gap: 40px;min-height: 60vh;align-items: center;padding: 60px 0}
+.hero-left h1 {font-size: 2.5rem;font-weight: 700;margin-bottom: 16px}
+.hero-left p {font-size: 1.1rem}
+.hero-right {font-size: 1rem;color: var(--secondary-color);max-width: 600px}
+section {padding: 40px 0;border-top: 1px solid var(--border-color)}
+h2 {font-size: 1.8rem;color: var(--primary-color);margin-bottom: 24px;font-weight: 600}
+.plans-container {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 24px;align-items: start}
+.plan-card {background: var(--highlight-bg);padding: 24px;border-radius: 4px;position: relative}
+.plan-card.featured {border: 2px solid var(--primary-color)}
+.plan-card.featured::after {content: "推荐配置";position: absolute;top: -12px;right: 16px;background: var(--primary-color);color: var(--bg-color);padding: 4px 8px;font-size: 12px;border-radius: 2px}
+.plan-name {font-size: 1.4rem;margin-bottom: 8px;color: var(--primary-color)}
+.plan-price {font-size: 1.2rem;margin-bottom: 4px}
+.plan-annual {font-size: 0.9rem;color: var(--secondary-color);margin-bottom: 16px}
+.plan-features {list-style: none}
+.plan-features li {padding: 8px 0;border-bottom: 1px dashed var(--border-color)}
+.plan-features li:last-child {border-bottom: none}
+.faq-container {max-width: 700px;margin: 0 auto}
+.qa-item {margin-bottom: 24px}
+.question {background-color: var(--primary-color);color: var(--bg-color);padding: 12px 16px;border-radius: 12px 12px 2px 12px;margin-bottom: 8px;max-width: 80%}
+.answer {background-color: var(--highlight-bg);padding: 12px 16px;border: 1px solid var(--border-color);border-radius: 2px 12px 12px 12px;margin-left: 20%;max-width: 80%;margin-left: auto}
+.usage-list {list-style: none}
+.usage-list li {margin-bottom: 16px;padding-left: 24px;position: relative}
+.usage-list li::before {content: attr(data-step);position: absolute;left: 0;top: 0;font-weight: bold;color: var(--primary-color)}
+footer {text-align: center;padding: 24px;border-top: 1px solid var(--border-color);margin-top: 40px;font-size: 0.9rem;color: var(--secondary-color)}
+@media (max-width: 768px) {
+  nav ul {display: none}
+  .hero {grid-template-columns: 1fr;gap: 20px;text-align: left}
+  .answer, .question {max-width: 100%;margin-left: 0}
+}
+</style><header>
+  <nav>
+    <div class="logo">老鸭云</div>
+    <ul>
+      <li><a href="#plans">套餐参数</a></li>
+      <li><a href="#usage">配置指南</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="hero" class="hero">
+    <div class="hero-left">
+      <h1>老鸭云</h1>
+      <p>数据中转协议服务</p>
+    </div>
+    <div class="hero-right">
+      <p>本服务提供基于现代加密协议的网络数据中转通道。系统采用分布式节点架构，旨在为用户提供稳定的跨境数据传输路由。请根据实际流量需求选择对应套餐，并严格按照客户端指南进行参数配置。</p>
+    </div>
+  </section>
+
+  <section id="plans">
+    <h2>套餐参数对照</h2>
+    <p>以下为各版本资源配置明细，按年付可享受折扣优惠。</p>
+    <div class="plans-container">
+      <article class="plan-card">
+        <h3 class="plan-name">基础版</h3>
+        <div class="plan-price">¥15/月</div>
+        <div class="plan-annual">按年付仅需 ¥150/年</div>
+        <ul class="plan-features">
+          <li>每月 100GB 流量配额</li>
+          <li>支持 3 台设备并发授权</li>
+          <li>标准线路节点接入权限</li>
+          <li>基础区域流媒体网络路由支持</li>
+        </ul>
+      </article>
+      <article class="plan-card featured">
+        <h3 class="plan-name">旗舰版</h3>
+        <div class="plan-price">¥35/月</div>
+        <div class="plan-annual">按年付仅需 ¥350/年</div>
+        <ul class="plan-features">
+          <li>每月 300GB 流量配额</li>
+          <li>支持 5 台设备并发授权</li>
+          <li>IPLC 专线通道接入权限</li>
+          <li>全节点原生流媒体网络路由优化</li>
+          <li>7x24 优先级工单处理通道</li>
+        </ul>
+      </article>
+      <article class="plan-card">
+        <h3 class="plan-name">团队版</h3>
+        <div class="plan-price">¥85/月</div>
+        <div class="plan-annual">按年付仅需 ¥850/年</div>
+        <ul class="plan-features">
+          <li>每月 1000GB 流量配额</li>
+          <li>支持 20 台设备并发授权</li>
+          <li>VIP 专属高带宽节点池</li>
+          <li>企业定制路由策略支持</li>
+          <li>专属客户经理对接服务</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="usage">
+    <h2>客户端配置指南</h2>
+    <ol class="usage-list">
+      <li>获取订阅地址：登录账户后台，在套餐详情页复制专属订阅链接。</li>
+      <li>安装客户端软件：根据操作系统下载对应的协议客户端，建议使用官方维护的开源工具。</li>
+      <li>导入节点配置：打开客户端，选择“从剪贴板导入”或“订阅管理”功能，粘贴订阅地址并更新。</li>
+      <li>选择路由节点：在节点列表中，根据目标服务区域选择延迟较低的节点。</li>
+      <li>建立系统代理：启动系统代理模式，设置全局或规则模式以接管系统网络流量。</li>
+    </ol>
+  </section>
+
+  <section id="faq">
+    <h2>常见问题排查</h2>
+    <div class="faq-container">
+      <div class="qa-item">
+        <div class="question">连接节点后无法访问任何网站，如何排查？</div>
+        <div class="answer">请首先检查客户端系统代理是否已开启。若代理已开启，尝试切换至其他节点。若所有节点均无效，请检查本地网络防火墙是否拦截了代理软件的进程。</div>
+      </div>
+      <div class="qa-item">
+        <div class="question">流量配额用尽后会发生什么？</div>
+        <div class="answer">流量耗尽后，中转服务将自动暂停。系统会在流量使用达到 80% 时发送通知邮件。您可以在后台手动购买流量包或等待下个计费周期刷新。</div>
+      </div>
+      <div class="qa-item">
+        <div class="question">支持哪些类型的协议？</div>
+        <div class="answer">系统默认提供基于 VMess、VLESS 及 Trojan 协议的节点配置。客户端需支持上述协议标准方可正常建立连接。</div>
+      </div>
+      <div class="qa-item">
+        <div class="question">多设备同时登录会被封号吗？</div>
+        <div class="answer">系统允许在套餐规定的设备数量限制内同时建立连接。超出限制的新设备将无法通过身份验证，但不会触发封禁机制。</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>老鸭云 © 2023 数据中转服务文档</p>
+</footer><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>

@@ -1,0 +1,74 @@
+{
+  "version": 2,
+  "template_version": "3a528c553883e59d7cfa",
+  "page_size": 20,
+  "site_id": "0ea59eb99e7c03695279a2df",
+  "owner": "dshyseegh",
+  "repo": "page-07cee95b10a42c57a61b4205",
+  "title": "老鸭云",
+  "mode": "repo",
+  "articles": [
+    {
+      "id": "07cee95b10a42c57a61b4205",
+      "a": "老鸭云",
+      "b": "",
+      "entity": "老鸭云",
+      "brand": "老鸭云",
+      "separator": "",
+      "path": "index.html",
+      "hash": "c0222bfc8ed3d09d2b17845b3f1636b872440c3c99d1069baffec7133fe80fb0",
+      "content": {
+        "keyword1": "老鸭云",
+        "keyword2": "",
+        "primary_entity": "老鸭云",
+        "plans": [],
+        "clients": [],
+        "_offline": false,
+        "content": {
+          "AI_HERO_INTRO": "老鸭云提供基于现代加密协议的数据传输中转服务。本文档详述套餐参数、客户端配置及常见故障排查方法。",
+          "AI_DESCRIPTION": "老鸭云提供基于现代加密协议的数据传输中转服务。本文档详述套餐参数、客户端配置及常见故障排查方法。"
+        },
+        "_brand_page": {
+          "version": 3,
+          "body": "<style>\n:root {--bg-color: #FAF3E0;--primary-color: #1B3B36;--secondary-color: #4A5D52;--text-color: #2C2C2C;--border-color: #D6CFB8;--highlight-bg: #FDFBF3}\n*, *::before, *::after {box-sizing: border-box;margin: 0;padding: 0}\nbody {font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif;background-color: var(--bg-color);color: var(--text-color);line-height: 1.7;font-size: 16px}\nheader {background-color: var(--primary-color);color: var(--bg-color);position: sticky;top: 0;z-index: 100}\nnav {max-width: 1200px;margin: 0 auto;padding: 12px 24px;display: flex;justify-content: space-between;align-items: center}\nnav .logo {font-weight: 700;letter-spacing: 1px;font-size: 18px}\nnav ul {display: flex;list-style: none;gap: 24px}\nnav a {color: var(--bg-color);text-decoration: none;font-size: 14px;opacity: 0.9}\nnav a:hover {opacity: 1;text-decoration: underline}\nmain {max-width: 1200px;margin: 0 auto;padding: 40px 24px}\n.hero {display: grid;grid-template-columns: 1fr 3fr;gap: 40px;min-height: 60vh;align-items: center;padding: 60px 0}\n.hero-left h1 {font-size: 2.5rem;font-weight: 700;margin-bottom: 16px}\n.hero-left p {font-size: 1.1rem}\n.hero-right {font-size: 1rem;color: var(--secondary-color);max-width: 600px}\nsection {padding: 40px 0;border-top: 1px solid var(--border-color)}\nh2 {font-size: 1.8rem;color: var(--primary-color);margin-bottom: 24px;font-weight: 600}\n.plans-container {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 24px;align-items: start}\n.plan-card {background: var(--highlight-bg);padding: 24px;border-radius: 4px;position: relative}\n.plan-card.featured {border: 2px solid var(--primary-color)}\n.plan-card.featured::after {content: \"推荐配置\";position: absolute;top: -12px;right: 16px;background: var(--primary-color);color: var(--bg-color);padding: 4px 8px;font-size: 12px;border-radius: 2px}\n.plan-name {font-size: 1.4rem;margin-bottom: 8px;color: var(--primary-color)}\n.plan-price {font-size: 1.2rem;margin-bottom: 4px}\n.plan-annual {font-size: 0.9rem;color: var(--secondary-color);margin-bottom: 16px}\n.plan-features {list-style: none}\n.plan-features li {padding: 8px 0;border-bottom: 1px dashed var(--border-color)}\n.plan-features li:last-child {border-bottom: none}\n.faq-container {max-width: 700px;margin: 0 auto}\n.qa-item {margin-bottom: 24px}\n.question {background-color: var(--primary-color);color: var(--bg-color);padding: 12px 16px;border-radius: 12px 12px 2px 12px;margin-bottom: 8px;max-width: 80%}\n.answer {background-color: var(--highlight-bg);padding: 12px 16px;border: 1px solid var(--border-color);border-radius: 2px 12px 12px 12px;margin-left: 20%;max-width: 80%;margin-left: auto}\n.usage-list {list-style: none}\n.usage-list li {margin-bottom: 16px;padding-left: 24px;position: relative}\n.usage-list li::before {content: attr(data-step);position: absolute;left: 0;top: 0;font-weight: bold;color: var(--primary-color)}\nfooter {text-align: center;padding: 24px;border-top: 1px solid var(--border-color);margin-top: 40px;font-size: 0.9rem;color: var(--secondary-color)}\n@media (max-width: 768px) {\n  nav ul {display: none}\n  .hero {grid-template-columns: 1fr;gap: 20px;text-align: left}\n  .answer, .question {max-width: 100%;margin-left: 0}\n}\n</style><header>\n  <nav>\n    <div class=\"logo\">老鸭云</div>\n    <ul>\n      <li><a href=\"#plans\">套餐参数</a></li>\n      <li><a href=\"#usage\">配置指南</a></li>\n      <li><a href=\"#faq\">常见问题</a></li>\n    </ul>\n  </nav>\n</header>\n\n<main>\n  <section id=\"hero\" class=\"hero\">\n    <div class=\"hero-left\">\n      <h1>老鸭云</h1>\n      <p>数据中转协议服务</p>\n    </div>\n    <div class=\"hero-right\">\n      <p>本服务提供基于现代加密协议的网络数据中转通道。系统采用分布式节点架构，旨在为用户提供稳定的跨境数据传输路由。请根据实际流量需求选择对应套餐，并严格按照客户端指南进行参数配置。</p>\n    </div>\n  </section>\n\n  <section id=\"plans\">\n    <h2>套餐参数对照</h2>\n    <p>以下为各版本资源配置明细，按年付可享受折扣优惠。</p>\n    <div class=\"plans-container\">\n      <article class=\"plan-card\">\n        <h3 class=\"plan-name\">基础版</h3>\n        <div class=\"plan-price\">¥15/月</div>\n        <div class=\"plan-annual\">按年付仅需 ¥150/年</div>\n        <ul class=\"plan-features\">\n          <li>每月 100GB 流量配额</li>\n          <li>支持 3 台设备并发授权</li>\n          <li>标准线路节点接入权限</li>\n          <li>基础区域流媒体网络路由支持</li>\n        </ul>\n      </article>\n      <article class=\"plan-card featured\">\n        <h3 class=\"plan-name\">旗舰版</h3>\n        <div class=\"plan-price\">¥35/月</div>\n        <div class=\"plan-annual\">按年付仅需 ¥350/年</div>\n        <ul class=\"plan-features\">\n          <li>每月 300GB 流量配额</li>\n          <li>支持 5 台设备并发授权</li>\n          <li>IPLC 专线通道接入权限</li>\n          <li>全节点原生流媒体网络路由优化</li>\n          <li>7x24 优先级工单处理通道</li>\n        </ul>\n      </article>\n      <article class=\"plan-card\">\n        <h3 class=\"plan-name\">团队版</h3>\n        <div class=\"plan-price\">¥85/月</div>\n        <div class=\"plan-annual\">按年付仅需 ¥850/年</div>\n        <ul class=\"plan-features\">\n          <li>每月 1000GB 流量配额</li>\n          <li>支持 20 台设备并发授权</li>\n          <li>VIP 专属高带宽节点池</li>\n          <li>企业定制路由策略支持</li>\n          <li>专属客户经理对接服务</li>\n        </ul>\n      </article>\n    </div>\n  </section>\n\n  <section id=\"usage\">\n    <h2>客户端配置指南</h2>\n    <ol class=\"usage-list\">\n      <li>获取订阅地址：登录账户后台，在套餐详情页复制专属订阅链接。</li>\n      <li>安装客户端软件：根据操作系统下载对应的协议客户端，建议使用官方维护的开源工具。</li>\n      <li>导入节点配置：打开客户端，选择“从剪贴板导入”或“订阅管理”功能，粘贴订阅地址并更新。</li>\n      <li>选择路由节点：在节点列表中，根据目标服务区域选择延迟较低的节点。</li>\n      <li>建立系统代理：启动系统代理模式，设置全局或规则模式以接管系统网络流量。</li>\n    </ol>\n  </section>\n\n  <section id=\"faq\">\n    <h2>常见问题排查</h2>\n    <div class=\"faq-container\">\n      <div class=\"qa-item\">\n        <div class=\"question\">连接节点后无法访问任何网站，如何排查？</div>\n        <div class=\"answer\">请首先检查客户端系统代理是否已开启。若代理已开启，尝试切换至其他节点。若所有节点均无效，请检查本地网络防火墙是否拦截了代理软件的进程。</div>\n      </div>\n      <div class=\"qa-item\">\n        <div class=\"question\">流量配额用尽后会发生什么？</div>\n        <div class=\"answer\">流量耗尽后，中转服务将自动暂停。系统会在流量使用达到 80% 时发送通知邮件。您可以在后台手动购买流量包或等待下个计费周期刷新。</div>\n      </div>\n      <div class=\"qa-item\">\n        <div class=\"question\">支持哪些类型的协议？</div>\n        <div class=\"answer\">系统默认提供基于 VMess、VLESS 及 Trojan 协议的节点配置。客户端需支持上述协议标准方可正常建立连接。</div>\n      </div>\n      <div class=\"qa-item\">\n        <div class=\"question\">多设备同时登录会被封号吗？</div>\n        <div class=\"answer\">系统允许在套餐规定的设备数量限制内同时建立连接。超出限制的新设备将无法通过身份验证，但不会触发封禁机制。</div>\n      </div>\n    </div>\n  </section>\n</main>\n\n<footer>\n  <p>老鸭云 © 2023 数据中转服务文档</p>\n</footer>",
+          "hash": "1c04e40eedd613279d081c08a72a1b3114f76244a1e5608da0a5c8b2fc2566b3",
+          "seo": {
+            "title": "老鸭云 - 稳健数据传输协议配置工具",
+            "keywords": "老鸭云,网络代理,专线传输,科学上网,隐私保护,节点加速",
+            "description": "老鸭云提供基于现代加密协议的数据传输中转服务。本文档详述套餐参数、客户端配置及常见故障排查方法。"
+          },
+          "provider": "grok",
+          "model": "glm-5.3",
+          "design": {
+            "no": "294",
+            "hero": "7 窄栏居左配大面积留白",
+            "palette": "5 奶油黄配墨绿",
+            "nav": "1 顶部细横条",
+            "card": "1 无边框仅靠留白分隔",
+            "plans_view": "5 两栏对照配推荐标记",
+            "faq_view": "5 对话气泡式问答",
+            "tone": "1 冷静克制的说明书口吻",
+            "order": "首屏优先，其余区块由 AI 根据已选构图和信息关系安排"
+          }
+        }
+      }
+    }
+  ],
+  "domain": {
+    "apex": "zggzqzjw.cn",
+    "host": "p-53a46b8268.zggzqzjw.cn",
+    "kind": "subdomain",
+    "candidate_roots_ref": "subdomain_roots:91e741dce7c147d9ce91af6f84daa678dae755807d903b04925261e0a3a8d804",
+    "prefix_mode": "auto"
+  },
+  "friendlinks": [],
+  "file_hashes": {
+    "index.html": "564c93e4ae0bd395c345881523b6dc550c3253c371d49aada26162cd279b7921",
+    "sitemap.xml": "3b220d44698111add4c3dc9eb8bb71b2a417c14529bca5727b2a654ebede506c",
+    ".nojekyll": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "CNAME": "4d04afa53516d0a2b40e502fec2ab541fb3b0414c77970d2b0246d9e64976855",
+    "robots.txt": "bd51abf18ed33232636099ece36f6e91f77fa9cb69798c3dbbd9933fbb56d149",
+    "60c30dcc581b0521a48760a3abf19b7d.txt": "7680e7ccfa123409e311871f5d1e42f176ea495aad6780e1b848ced462f8dd29"
+  },
+  "revision": "d160ccc8e9b88bd65c9f86e736a1d59961291c24440b3b6febe1a94e7865d165"
+}
